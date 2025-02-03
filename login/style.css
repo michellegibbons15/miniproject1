@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header styling */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgb(1,80,1);
+    color: white;
+}
+
+.logo img{
+    max-height: 100px;
+    width:auto;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container button{
+    float: right;
+    padding: 5px 5px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.nav input[type=text]{
+    padding: 5px;
+}
+.nav a{
+    margin: 0 1rem;
+    color: white;
+    font-size: 30px;
+}
+.nav a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.profile-icon{
+    margin-left: auto;
+    font-size: 50px;
+}
+.profile-icon:hover{
+    cursor: pointer;
+}
+
+/* background */
+.picture img{
+    width: 100%;
+    height: 90vh;
+}
+.main-content{
+    position: relative;
+}
+
+/* log in */
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.LogIn{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 300px;
+    text-align: center;
+
+}
+
+.LogIn label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+
+.LogIn input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.LogIn button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(1,80,1);
+    width: 100%;
+    font-size: 16px;
+}
+.LogIn label.rememberMe {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    cursor: pointer;
+  }
+.LogIn input.checkbox{
+    width: 18px;
+    height: 18px;
+    accent-color: blue;
+    margin-right: 5px;
+}
+
+/* Style for Forgot Password link */
+.LogIn p {
+    text-align: center;
+}
+
+.LogIn p a {
+    text-decoration: none;
+    color: blue;
+}
+
+.LogIn p a:hover {
+    text-decoration: underline;
+}

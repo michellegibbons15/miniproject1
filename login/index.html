@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/342f1d2f3a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><img src="logo-png3.png"></div>
+      <nav class="nav">
+        <div class="search-container">
+          <input type="text" placeholder="Search...">
+          <button type="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <a>Explore</a>
+        <a>Leagues</a>
+        <a>Community</a>
+        <div class="profile-icon"><i class="fa-regular fa-user"></i></div>    
+      </nav>
+  </header>
+  <main class="main-content">
+    <div class="picture"><img src="swim.jpg" alt="swimming"></div>
+    <div class="container">
+      <div class="LogIn">
+        <form action="">
+          <label for="first">Username:</label>
+          <input type="text" id="first" name="first" placeholder="Enter your Username" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+          <button type="submit">Log In</button>
+          <label class="rememberMe">
+            <input type="checkbox" class="checkbox">Remember Me
+          </label>
+          <p><a href="#">Forgot Password?</a></p>
+          <p>Don't have an account? <a href="#">Sign up</a></p>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
