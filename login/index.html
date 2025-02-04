@@ -24,7 +24,9 @@
   <main class="main-content">
     <div class="picture"><img src="swim.jpg" alt="swimming"></div>
     <div class="container">
-      <div class="LogIn">
+      <!-- log in form -->
+      <div id="loginForm" class="form-container active">
+        <h2>Log In</h2>
         <form action="">
           <label for="first">Username:</label>
           <input type="text" id="first" name="first" placeholder="Enter your Username" required>
@@ -34,11 +36,36 @@
           <label class="rememberMe">
             <input type="checkbox" class="checkbox">Remember Me
           </label>
-          <p><a href="#">Forgot Password?</a></p>
-          <p>Don't have an account? <a href="#">Sign up</a></p>
+          <p><a href="#" onclick="toggleForms('forgotPassword')">Forgot Password?</a></p>
+          <p>Don't have an account? <a href="#" onclick="toggleForms('signup')">Sign up</a></p>
         </form>
+      </div>
+      <!-- sign up form -->
+      <div id="signupForm" class="form-container">
+        <h2>Sign Up</h2>
+        <form action="">
+            <label for="newUser">Username:</label>
+            <input type="text" id="newUser" name="newUser" placeholder="Enter your Username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword" placeholder="Enter your Password" required>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="#" onclick="toggleForms('login')">Log in</a></p>
+        </form>
+      </div>
+      <!-- forgot password form -->
+      <div id="forgotPasswordForm" class="form-container">
+        <h2>Forgot Passoword?</h2>
+        <form action="">
+          <label for="emailReset">Enter your Email:</label>
+          <input type="email" id="emailReset" name="emailReset" placeholder="Enter your Email" required>
+          <button type="submit">Reset Password</button>
+          <p>Remember your password? <a href="#" onclick="toggleForms('login')">Log in</a></p>
+      </form>
       </div>
     </div>
   </main>
+  <script src="index.js"> </script>
 </body>
 </html>
