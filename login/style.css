@@ -3,7 +3,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Header styling */
+/* Header styling nad nav bar */
 .header{
     display: flex;
     justify-content: space-between;
@@ -61,7 +61,7 @@ body{
     position: relative;
 }
 
-/* log in */
+/* log in, sign up, forgot password */
 .container{
     position: absolute;
     top: 50%;
@@ -72,7 +72,13 @@ body{
     align-items: center;
     
 }
-.LogIn{
+.form-container{
+    display: none;
+}
+.active{
+    display:block;
+}
+#loginForm, #signupForm, #forgotPasswordForm{
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -83,7 +89,7 @@ body{
 
 }
 
-.LogIn label {
+#loginForm label, #signupForm label, #forgotPasswordForm label {
     display: block;
     width: 100%;
     margin-top: 10px;
@@ -93,7 +99,7 @@ body{
     font-weight: bold;
 }
 
-.LogIn input {
+#loginForm input, #signupForm input, #forgotPasswordForm input {
     display: block;
     width: 100%;
     margin-bottom: 15px;
@@ -103,7 +109,7 @@ body{
     border-radius: 5px;
 }
 
-.LogIn button {
+#loginForm button, #signupForm button, #forgotPasswordForm button{
     padding: 15px;
     border-radius: 10px;
     margin-top: 15px;
@@ -115,13 +121,13 @@ body{
     width: 100%;
     font-size: 16px;
 }
-.LogIn label.rememberMe {
+#loginForm label.rememberMe {
     display: flex;
     align-items: center;
     gap: 5px; 
     cursor: pointer;
   }
-.LogIn input.checkbox{
+#loginForm input.checkbox{
     width: 18px;
     height: 18px;
     accent-color: blue;
