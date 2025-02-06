@@ -23,6 +23,7 @@
         <a>Explore</a>
         <a>Leagues</a>
         <a>Community</a>
+        <div class="message-icon"><i class="fa-regular fa-envelope"></i></div>
         <div class="profile-icon"><i class="fa-regular fa-user"></i></div>
       </nav>
     </header>
@@ -30,9 +31,13 @@
       <div class="picture"><img src="FH.jpg" alt="fieldHockey"></div>
       <div class="Welcome">
         <img src="soccer.JPG" alt="Michelle" class="profile">
-        <h1>Welcome back, Michelle!</h1>
+        <div class="welcome-bar">
+          <h1>Welcome back, Michelle!</h1>
+          <h4><i class="fa-solid fa-bell"></i>Notifications</h4>
+        </div>  
       </div>
       <div class="container">
+<!-- calendar -->
         <div class="calendar">
           <div class="calendar-header">February 2025</div>
           <div class="calendar-days">
@@ -53,14 +58,14 @@
             <div></div>
             <div>1</div>
             <div>2</div>
-            <div class="today">3</div>
+            <div>3</div>
             <div>4</div>
             <div>5</div>
             <div>6</div>
             <div>7</div>
             <div>8</div>
             <div>9</div>
-            <div>10</div>
+            <div class="today">10</div>
             <div>11</div>
             <div>12</div>
             <div>13</div>
@@ -81,36 +86,43 @@
             <div>28</div>
           </div>
         </div>
-        <div class="favorites">
+<!-- events-->
+        <div class="events">
           <h3><i class="fa-solid fa-calendar"></i>My upcoming events</h3>
           <ul>
-            <li>SCOR - 2/3/25 @ 10:15</li>
-            <li>SCOR - 2/4/25 @ 6:15</li>
-            <li>SCOR - 2/4/25 @ 8:15</li>
+            <li>SCOR:<br> 2/10/25 at 10:15pm on field 1</li>
+            <li>SCOR:<br> 2/11/25 at 7:15pm on field 3</li>
+            <li>SCOR:<Br> 2/11/25 at 8:15pm on field 3</li>
           </ul>
         </br>
         </br>
           <h3><i class="fa-solid fa-map-pin"></i>My recent visits</h3>
           <ul>
-            <li>SCOR - 1/26/25 @ 7:15</li>
-            <li>Bryan Park - 8/4/24 @ 5:00</li>
-            <li>UofR Disc Golf - 7/18/24 - 18 holes</li>
+            <li>SCOR:<br> 2/4/25 at 8:15pm on field 1</li>
+            <li>Bryan Park:<br> 8/4/24 at 5:00pm on field D</li>
+            <li>Duncroft:<br> 7/18/24 played 18 holes</li>
           </ul>
         </div>
         <div class="groups">
           <h3><i class="fa-solid fa-user-group"></i>My groups</h3>
-          <ul>
-            <li>804 Disc Golf</li>
-            <li>804 Pick-Up</li>
-            <li>SCOR</li>
-          </ul>
+          <div id="card-list"></div>
         </div>
+<!-- groups - template for data set -->
+        <template id="card-template">
+          <div class="card">
+            <div class="class-body">
+              <img class="card-logo" src=""/>
+              <div class="card-title"></div>
+            </div>
+          </div>
+        </template>
+<!-- Local recommendations-->
         <div class="suggestions">
           <h3><i class="fa-solid fa-location-dot"></i>Local Recommendations</h3>
           <h4><a href="#">Explore</a> these other facilities:</h4>
           <ul>
             <li>Ukrops Park</li>
-            <li>Gillies Creek Part</li>
+            <li>Gillies Creek Park</li>
             <li>Duncroft</li>
             <li>Dorey Park</li>
             <li>Deep Run Park</li>
@@ -118,6 +130,7 @@
         </div>
       </div>
     </main>
-
+    <script src="index.js"></script>
   </body>
 </html>
+
