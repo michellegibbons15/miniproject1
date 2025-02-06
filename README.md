@@ -1,5 +1,5 @@
 # miniproject1
 
-[https://michellegibbons15.github.io/miniproject1/landingpage/] 
-[https://michellegibbons15.github.io/miniproject1/login/]
-[https://michellegibbons15.github.io/miniproject1/dashboard/]
+[Landing Page](https://michellegibbons15.github.io/miniproject1/landingpage/)
+[LogIn / SignUp](https://michellegibbons15.github.io/miniproject1/login/)
+[Dashboard](https://michellegibbons15.github.io/miniproject1/dashboard/)
