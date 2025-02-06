@@ -10,15 +10,15 @@ function groupAddCard(imageUrl, text) {
 
 const groups = [
   {
-    imageUrl: "\dg.jpeg",
+    imageUrl: "images/dg.jpeg",
     text: "804 Disc Golf",
   },
   {
-    imageUrl: "\soccerball.JPG",
+    imageUrl: "images/soccerball.JPG",
     text: "804 Pick-Up",
   },
   {
-    imageUrl: "\SCOR.jpg",
+    imageUrl: "images/SCOR.jpg",
     text: "SCOR",
   },
 ];
