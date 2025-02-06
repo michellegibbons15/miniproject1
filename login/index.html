@@ -24,7 +24,7 @@
   <main class="main-content">
     <div class="picture"><img src="swim.jpg" alt="swimming"></div>
     <div class="container">
-      <!-- log in form -->
+<!-- log in form -->
       <div id="loginForm" class="form-container active">
         <h2>Log In</h2>
         <form action="">
@@ -32,7 +32,9 @@
           <input type="text" id="first" name="first" placeholder="Enter your Username" required>
           <label for="password">Password:</label>
           <input type="password" id="password" name="password" placeholder="Enter your Password" required>
-          <button type="submit">Log In</button>
+          <!-- REMEMBER TO CHANGE THIS BACK TO TYPE"SUBMIT"....ONCLICK IS JUST FOR MINIPROJECT 1 -->
+          <!-- <button type="submit">Log In</button> -->
+           <button onclick="location.href='//127.0.0.1:5500/MiniProject1/miniproject1/dashboard/index.html'">Log In </button>
           <label class="rememberMe">
             <input type="checkbox" class="checkbox">Remember Me
           </label>
@@ -40,7 +42,7 @@
           <p>Don't have an account? <a href="#" onclick="toggleForms('signup')">Sign up</a></p>
         </form>
       </div>
-      <!-- sign up form -->
+<!-- sign up form -->
       <div id="signupForm" class="form-container">
         <h2>Sign Up</h2>
         <form action="">
@@ -54,7 +56,7 @@
             <p>Already have an account? <a href="#" onclick="toggleForms('login')">Log in</a></p>
         </form>
       </div>
-      <!-- forgot password form -->
+<!-- forgot password form -->
       <div id="forgotPasswordForm" class="form-container">
         <h2>Forgot Passoword?</h2>
         <form action="">
