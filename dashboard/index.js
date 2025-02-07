@@ -14,7 +14,7 @@ const groups = [
     text: "804 Disc Golf",
   },
   {
-    imageUrl: "images/soccerball.JPG",
+    imageUrl: "images/soccerball.jpg",
     text: "804 Pick-Up",
   },
   {
